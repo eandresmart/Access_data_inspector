@@ -27,7 +27,6 @@ The procedures use DAO (Data Access Objects) objects and methods, so you need a 
 
 The reference is already defined in the spreadsheet I'm sharing, but the inconvenience with VBA is that the reference depends on the path to your MS Office installation, and this may vary between PCs. So, if it is not working, most likely the existing reference does not work for your PC and you need to create it.
 
-Creating the reference is done from the VBA IDE, and as it is I'm using the 'Microsoft Office 16.0 Access Database Engine Object Library', provided by the '`
-```ACEDAO.dll```', commonly found under the path '```C:\Program Files\Microsoft Office\root\Office16\```'. If the DLL exists under that path in your system things should work fine. If it does not, you will have to search for it, and then browse to the DLL location to set the reference.
+Creating the reference is done from the VBA IDE, and as it is I'm using the 'Microsoft Office 16.0 Access Database Engine Object Library', provided by the ACEDAO.dll, commonly found under the path 'C:\Program Files\Microsoft Office\root\Office16\'. If the DLL exists under that path in your system things should work fine. If it does not, you will have to search for it, and then browse to the DLL location to set the reference.
 
 I have also included a procedure 'CheckDAOReference', that will check if the reference is set for you, but to run it you need to 'trust access to the VBA project object model', which I would not recommend doing unless you know what you are doing.
